@@ -77,27 +77,12 @@ void MyFirstPlugin::ProcessDoubleReplacing(double** inputs, double** outputs, in
   // *out1 and out1[s]
 
 
-   //out2[s]=out1[s];
-  
-  // mPhase += mPhaseIncrement;
-    //            while (mPhase >= twoPI) {
-		//			mPhase -= twoPI;}
+   
 }
   
 }
- // Copy left buffer into right buffer:
-  
-/*
-int delayMilliseconds = 500; // half a second
-int delaySamples = 
-    (int)((float)delayMilliseconds * 44.1f); // assumes 44100 Hz sample rate
-float decay = 0.5f;
-for (int i = 0; i < buffer.length - delaySamples; i++)
-{
-    // WARNING: overflow potential
-    buffer[i + delaySamples] += (short)((float)buffer[i] * decay);
-} 
-*/
+
+
 
 
 
