@@ -31,7 +31,7 @@ MyFirstPlugin::MyFirstPlugin(IPlugInstanceInfo instanceInfo)
   //arguments are: name, defaultVal, minVal, maxVal, step, label
   GetParam(kGain)->InitDouble("Gain", 0.0, 0., 100.0, 0.01, "%","Group");//Iparam class starts the chain 
   //InitDouble is an Iparam class method and GetParam is from Iplugbase.h with an Iparam class that has a Iplugbase::getparampointer 
-  GetParam(kGain)->SetShape(1.0); // all so far is called functions lol
+  GetParam(kGain)->SetShape(1.0); 
 
 
   IGraphics* pGraphics = MakeGraphics(this, kWidth, kHeight); // setting pointer for later AttachGraphics(pGraphics);
@@ -50,12 +50,12 @@ MyFirstPlugin::MyFirstPlugin(IPlugInstanceInfo instanceInfo)
   AttachGraphics(pGraphics);
 
   //MakePreset("preset 1", ... );
-  MakeDefaultPreset((char *) "-", kNumPrograms); // all called functions
+  MakeDefaultPreset((char *) "-", kNumPrograms); 
 }
 
 MyFirstPlugin::~MyFirstPlugin() {}
 
-void MyFirstPlugin::ProcessDoubleReplacing(double** inputs, double** outputs, int nFrames)   // this is defining hah lol 
+void MyFirstPlugin::ProcessDoubleReplacing(double** inputs, double** outputs, int nFrames)  
 
 {
   // Mutex is already locked for us.
